@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { AnimatePresence } from 'motion/react';
 import { MenuHeader } from './components/MenuHeader';
 import { CategoryTabs } from './components/CategoryTabs';
 import { MenuGrid } from './components/MenuGrid';
@@ -175,12 +176,15 @@ export default function App() {
 
       <BottomNav activeTab={activeTab} onTabChange={setActiveTab} />
       
-      {selectedItem && (
-        <MenuDetailModal 
-          item={selectedItem} 
-          onClose={() => setSelectedItem(null)} 
-        />
-      )}
+      <AnimatePresence>
+        {selectedItem && (
+          <MenuDetailModal 
+            key={selectedItem.id}
+            item={selectedItem} 
+            onClose={() => setSelectedItem(null)} 
+          />
+        )}
+      </AnimatePresence>
     </div>
   );
 }
