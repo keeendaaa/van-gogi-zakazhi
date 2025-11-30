@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { AnimatePresence } from 'motion/react';
 import { MenuHeader } from './components/MenuHeader';
 import { CategoryTabs } from './components/CategoryTabs';
@@ -301,6 +301,39 @@ const menuItems: MenuItem[] = [
     category: 'appetizers',
     image: 'default'
   },
+  // Соусы
+  {
+    id: 63,
+    name: 'Ткемали',
+    description: '50 г',
+    price: 80,
+    category: 'appetizers',
+    image: 'default'
+  },
+  {
+    id: 64,
+    name: 'Аджика',
+    description: '50 г',
+    price: 80,
+    category: 'appetizers',
+    image: 'default'
+  },
+  {
+    id: 65,
+    name: 'Томатный',
+    description: '50 г',
+    price: 80,
+    category: 'appetizers',
+    image: 'default'
+  },
+  {
+    id: 66,
+    name: 'Сметана',
+    description: '50 г',
+    price: 80,
+    category: 'appetizers',
+    image: 'default'
+  },
   // Основные блюда
   {
     id: 37,
@@ -519,9 +552,23 @@ export default function App() {
   const [activeTab, setActiveTab] = useState<'recommendations' | 'menu' | 'ai'>('menu');
   const [selectedItem, setSelectedItem] = useState<MenuItem | null>(null);
 
-  const filteredItems = selectedCategory === 'all' 
-    ? menuItems 
-    : menuItems.filter(item => item.category === selectedCategory);
+  // Функция для рандомизации массива (Fisher-Yates shuffle)
+  const shuffleArray = <T,>(array: T[]): T[] => {
+    const shuffled = [...array];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    return shuffled;
+  };
+
+  // Рандомизируем блюда при изменении категории
+  const filteredItems = useMemo(() => {
+    const items = selectedCategory === 'all' 
+      ? menuItems 
+      : menuItems.filter(item => item.category === selectedCategory);
+    return shuffleArray(items);
+  }, [selectedCategory, menuItems]);
 
   return (
     <>
@@ -545,7 +592,7 @@ export default function App() {
         </>
       )}
 
-      {activeTab === 'recommendations' && <Recommendations onItemClick={setSelectedItem} />}
+      {activeTab === 'recommendations' && <Recommendations menuItems={menuItems} onItemClick={setSelectedItem} />}
       
       {activeTab === 'ai' && <AIWaiter />}
 

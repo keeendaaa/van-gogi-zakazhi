@@ -12,7 +12,6 @@ const categories: Category[] = [
   { id: 'appetizers', name: 'Закуски', icon: 'utensils' },
   { id: 'mains', name: 'Основные', icon: 'utensils' },
   { id: 'desserts', name: 'Десерты', icon: 'cake' },
-  { id: 'drinks', name: 'Напитки', icon: 'coffee' },
 ];
 
 const iconMap = {

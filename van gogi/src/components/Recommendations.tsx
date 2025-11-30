@@ -1,55 +1,35 @@
 import { motion } from 'motion/react';
+import { useState, useEffect, useMemo } from 'react';
 import { MenuItem } from './types';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import { Star, TrendingUp, Heart } from 'lucide-react';
 import { getImageUrl } from './imageMap';
 
 interface RecommendationsProps {
+  menuItems: MenuItem[];
   onItemClick: (item: MenuItem) => void;
 }
 
-const recommendedItems: (MenuItem & { reason: string; badge: string })[] = [
-  {
-    id: 5,
-    name: 'Стейк Рибай',
-    description: 'Мраморная говядина 300г с овощами гриль и соусом демиглас',
-    price: 1850,
-    category: 'mains',
-    image: 'ribeye steak',
-    reason: 'Самое популярное блюдо недели',
-    badge: 'popular'
-  },
-  {
-    id: 4,
-    name: 'Тартар из лосося',
-    description: 'Свежий лосось с авокадо, каперсами и лимонной заправкой',
-    price: 850,
-    category: 'appetizers',
-    image: 'salmon tartare',
-    reason: 'Выбор шеф-повара',
-    badge: 'chef'
-  },
-  {
-    id: 9,
-    name: 'Тирамису',
-    description: 'Классический итальянский десерт с маскарпоне',
-    price: 520,
-    category: 'desserts',
-    image: 'tiramisu dessert',
-    reason: 'Любимое гостями',
-    badge: 'favorite'
-  },
-  {
-    id: 6,
-    name: 'Ризотто с белыми грибами',
-    description: 'Кремовое ризотто с трюфельным маслом и пармезаном',
-    price: 980,
-    category: 'mains',
-    image: 'mushroom risotto',
-    reason: 'Новое в меню',
-    badge: 'new'
-  },
+// Функция для рандомизации массива (Fisher-Yates shuffle)
+const shuffleArray = <T,>(array: T[]): T[] => {
+  const shuffled = [...array];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled;
+};
+
+const reasons = [
+  'Самое популярное блюдо недели',
+  'Выбор шеф-повара',
+  'Любимое гостями',
+  'Новое в меню',
+  'Особенно рекомендуем',
+  'Попробуйте обязательно',
 ];
+
+const badges = ['popular', 'chef', 'favorite', 'new'] as const;
 
 const badgeConfig = {
   popular: { icon: TrendingUp, label: 'Популярное', color: 'bg-[#C41E3A]' },
@@ -58,7 +38,23 @@ const badgeConfig = {
   new: { icon: Star, label: 'Новинка', color: 'bg-[#C41E3A]' },
 };
 
-export function Recommendations({ onItemClick }: RecommendationsProps) {
+export function Recommendations({ menuItems, onItemClick }: RecommendationsProps) {
+  // Выбираем случайные блюда из существующих
+  const recommendedItems = useMemo(() => {
+    if (menuItems.length === 0) return [];
+    
+    // Берем случайные 4 блюда из всех доступных
+    const shuffled = shuffleArray(menuItems);
+    const selected = shuffled.slice(0, Math.min(4, menuItems.length));
+    
+    // Добавляем reason и badge к каждому блюду
+    return selected.map((item, index) => ({
+      ...item,
+      reason: reasons[index % reasons.length],
+      badge: badges[index % badges.length],
+    }));
+  }, [menuItems]);
+
   return (
     <div className="max-w-6xl mx-auto px-3 py-4">
       <motion.div
