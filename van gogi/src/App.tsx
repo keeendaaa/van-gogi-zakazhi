@@ -15,48 +15,48 @@ const menuItems: MenuItem[] = [
   {
     id: 1,
     name: 'Хинкали с говядиной и свининой',
-    description: '1 шт',
-    price: 90,
+    description: '3 шт',
+    price: 300,
     category: 'mains',
     image: 'default'
   },
   {
     id: 2,
     name: 'Хинкали с телятиной',
-    description: '1 шт',
-    price: 90,
+    description: '3 шт',
+    price: 300,
     category: 'mains',
     image: 'default'
   },
   {
     id: 3,
     name: 'Хинкали с бараниной',
-    description: '1 шт',
-    price: 90,
+    description: '3 шт',
+    price: 300,
     category: 'mains',
     image: 'default'
   },
   {
     id: 4,
     name: 'Хинкали с бараниной и брынзой',
-    description: '1 шт',
-    price: 90,
+    description: '3 шт',
+    price: 300,
     category: 'mains',
     image: 'default'
   },
   {
     id: 5,
     name: 'Хинкали с грибами',
-    description: '1 шт',
-    price: 90,
+    description: '3 шт',
+    price: 300,
     category: 'mains',
     image: 'default'
   },
   {
     id: 6,
     name: 'Хинкали с сыром',
-    description: '1 шт',
-    price: 90,
+    description: '3 шт',
+    price: 300,
     category: 'mains',
     image: 'default'
   },
@@ -65,7 +65,7 @@ const menuItems: MenuItem[] = [
     id: 7,
     name: 'Бакинские томаты с имеретинским сыром и соусом песто',
     description: '210 г',
-    price: 295,
+    price: 325,
     category: 'appetizers',
     image: 'default'
   },
@@ -81,7 +81,7 @@ const menuItems: MenuItem[] = [
     id: 9,
     name: 'Ассорти из грузинского домашнего сыра',
     description: '200 г',
-    price: 525,
+    price: 685,
     category: 'appetizers',
     image: 'default'
   },
@@ -113,7 +113,7 @@ const menuItems: MenuItem[] = [
     id: 13,
     name: 'Мясное плато',
     description: '300 г',
-    price: 755,
+    price: 855,
     category: 'appetizers',
     image: 'default'
   },
@@ -129,7 +129,7 @@ const menuItems: MenuItem[] = [
     id: 15,
     name: 'Хрустящие баклажаны с соусом Тай Чили',
     description: '300 г',
-    price: 435,
+    price: 465,
     category: 'appetizers',
     image: 'default'
   },
@@ -143,7 +143,7 @@ const menuItems: MenuItem[] = [
   },
   {
     id: 17,
-    name: 'Рулетики из баклажанов',
+    name: 'Рулетики из баклажанов с начинкой из грецких орехов',
     description: '270 г',
     price: 435,
     category: 'appetizers',
@@ -169,7 +169,7 @@ const menuItems: MenuItem[] = [
     id: 20,
     name: 'Салат из бакинских томатов и огурцов',
     description: '280 г',
-    price: 325,
+    price: 415,
     category: 'appetizers',
     image: 'default'
   },
@@ -177,7 +177,7 @@ const menuItems: MenuItem[] = [
     id: 21,
     name: 'Цезарь с курицей',
     description: '210 г',
-    price: 395,
+    price: 435,
     category: 'appetizers',
     image: 'default'
   },
@@ -265,7 +265,7 @@ const menuItems: MenuItem[] = [
     id: 32,
     name: 'Кюфта по-Турецки с нутом',
     description: '400 г',
-    price: 385,
+    price: 425,
     category: 'appetizers',
     image: 'default'
   },
@@ -273,7 +273,7 @@ const menuItems: MenuItem[] = [
     id: 33,
     name: 'Борщ с салом и чесночком',
     description: '300/200 г',
-    price: 365,
+    price: 395,
     category: 'appetizers',
     image: 'default'
   },
@@ -297,7 +297,7 @@ const menuItems: MenuItem[] = [
     id: 36,
     name: 'Куриный суп с домашней лапшой',
     description: '350 г',
-    price: 305,
+    price: 325,
     category: 'appetizers',
     image: 'default'
   },
@@ -451,7 +451,7 @@ const menuItems: MenuItem[] = [
     id: 55,
     name: 'Хачапури по - Мегрельски на компанию',
     description: '500 г',
-    price: 585,
+    price: 695,
     category: 'desserts',
     image: 'default'
   },
@@ -483,7 +483,7 @@ const menuItems: MenuItem[] = [
     id: 59,
     name: 'Гюзлама с курицей и сыром',
     description: '250 г',
-    price: 325,
+    price: 350,
     category: 'desserts',
     image: 'default'
   },
@@ -491,7 +491,7 @@ const menuItems: MenuItem[] = [
     id: 60,
     name: 'Гюзлама с курицей и сыром на компанию',
     description: '500 г',
-    price: 605,
+    price: 685,
     category: 'desserts',
     image: 'default'
   },

@@ -52,10 +52,10 @@ const recommendedItems: (MenuItem & { reason: string; badge: string })[] = [
 ];
 
 const badgeConfig = {
-  popular: { icon: TrendingUp, label: 'Популярное', color: 'bg-orange-500' },
-  chef: { icon: Star, label: 'От шефа', color: 'bg-yellow-500' },
-  favorite: { icon: Heart, label: 'Любимое', color: 'bg-pink-500' },
-  new: { icon: Star, label: 'Новинка', color: 'bg-green-500' },
+  popular: { icon: TrendingUp, label: 'Популярное', color: 'bg-[#C41E3A]' },
+  chef: { icon: Star, label: 'От шефа', color: 'bg-[#C41E3A]' },
+  favorite: { icon: Heart, label: 'Любимое', color: 'bg-[#C41E3A]' },
+  new: { icon: Star, label: 'Новинка', color: 'bg-[#C41E3A]' },
 };
 
 export function Recommendations({ onItemClick }: RecommendationsProps) {

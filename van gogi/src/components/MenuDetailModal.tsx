@@ -1,8 +1,8 @@
+import React, { useEffect } from 'react';
 import { motion } from 'motion/react';
 import { MenuItem } from './types';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import { X } from 'lucide-react';
-import { useEffect } from 'react';
 import { getImageUrl } from './imageMap';
 
 interface MenuDetailModalProps {
