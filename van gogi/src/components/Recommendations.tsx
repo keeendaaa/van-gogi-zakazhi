@@ -2,17 +2,11 @@ import { motion } from 'motion/react';
 import { MenuItem } from './types';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import { Star, TrendingUp, Heart } from 'lucide-react';
+import { getImageUrl } from './imageMap';
 
 interface RecommendationsProps {
   onItemClick: (item: MenuItem) => void;
 }
-
-const imageMap: Record<string, string> = {
-  'ribeye steak': 'https://images.unsplash.com/photo-1546964124-0cce460f38ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyaWJleWUlMjBzdGVha3xlbnwxfHx8fDE3NjQ1MjI4MDJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-  'salmon tartare': 'https://images.unsplash.com/photo-1763376360111-3597e5877517?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzYWxtb24lMjB0YXJ0YXJlfGVufDF8fHx8MTc2NDUyMjgwMnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-  'tiramisu dessert': 'https://images.unsplash.com/photo-1714385905983-6f8e06fffae1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0aXJhbWlzdSUyMGRlc3NlcnR8ZW58MXx8fHwxNzY0NDk0MDI3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-  'mushroom risotto': 'https://images.unsplash.com/photo-1609770424775-39ec362f2d94?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtdXNocm9vbSUyMHJpc290dG98ZW58MXx8fHwxNzY0NDg1NTc0fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-};
 
 const recommendedItems: (MenuItem & { reason: string; badge: string })[] = [
   {
@@ -96,11 +90,21 @@ export function Recommendations({ onItemClick }: RecommendationsProps) {
                 <div className="flex gap-3 p-3">
                   {/* Image */}
                   <div className="relative w-24 h-24 shrink-0 rounded-lg overflow-hidden bg-gradient-to-br from-[#C41E3A]/5 to-[#FFF8F0]">
-                    <ImageWithFallback
-                      src={imageMap[item.image]}
-                      alt={item.name}
-                      className="w-full h-full object-cover"
-                    />
+                    {getImageUrl(item.name) ? (
+                      <ImageWithFallback
+                        src={getImageUrl(item.name)}
+                        alt={item.name}
+                        className="w-full h-full object-cover"
+                      />
+                    ) : (
+                      <div className="w-full h-full flex items-center justify-center">
+                        <div className="w-12 h-12 rounded-full bg-[#C41E3A]/10 flex items-center justify-center">
+                          <svg className="w-6 h-6 text-[#C41E3A]/30" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                          </svg>
+                        </div>
+                      </div>
+                    )}
                     
                     {/* Badge */}
                     <div className={`absolute top-1.5 left-1.5 ${badge.color} text-white px-1.5 py-0.5 rounded-full flex items-center gap-1 text-[10px]`}>

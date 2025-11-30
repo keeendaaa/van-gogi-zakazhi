@@ -22,17 +22,30 @@ export function MenuCard({ item, imageUrl, onClick }: MenuCardProps) {
       onClick={onClick}
     >
       {/* Image Container */}
-      <div className="relative h-48 overflow-hidden bg-gradient-to-br from-[#C41E3A]/5 to-[#FFF8F0]">
-        <motion.div
-          animate={{ scale: isHovered ? 1.1 : 1 }}
-          transition={{ duration: 0.4 }}
-        >
-          <ImageWithFallback
-            src={imageUrl}
-            alt={item.name}
-            className="w-full h-48 object-cover"
-          />
-        </motion.div>
+      <div className="relative h-64 overflow-hidden bg-gradient-to-br from-[#C41E3A]/5 to-[#FFF8F0]">
+        {imageUrl ? (
+          <motion.div
+            animate={{ scale: isHovered ? 1.1 : 1 }}
+            transition={{ duration: 0.4 }}
+          >
+            <ImageWithFallback
+              src={imageUrl}
+              alt={item.name}
+              className="w-full h-64 object-cover"
+            />
+          </motion.div>
+        ) : (
+          <div className="w-full h-full flex items-center justify-center">
+            <div className="text-center">
+              <div className="w-16 h-16 mx-auto mb-2 rounded-full bg-[#C41E3A]/10 flex items-center justify-center">
+                <svg className="w-8 h-8 text-[#C41E3A]/30" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                </svg>
+              </div>
+              <p className="text-[#C41E3A]/40 text-xs">Фото</p>
+            </div>
+          </div>
+        )}
 
         {/* Overlay gradient */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
