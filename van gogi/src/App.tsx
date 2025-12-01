@@ -15,7 +15,7 @@ const menuItems: MenuItem[] = [
   {
     id: 1,
     name: 'Хинкали с говядиной и свининой',
-    description: '3 шт',
+    description: '',
     price: 300,
     category: 'mains',
     image: 'default'
@@ -23,7 +23,7 @@ const menuItems: MenuItem[] = [
   {
     id: 2,
     name: 'Хинкали с телятиной',
-    description: '3 шт',
+    description: '',
     price: 300,
     category: 'mains',
     image: 'default'
@@ -31,7 +31,7 @@ const menuItems: MenuItem[] = [
   {
     id: 3,
     name: 'Хинкали с бараниной',
-    description: '3 шт',
+    description: '',
     price: 300,
     category: 'mains',
     image: 'default'
@@ -39,7 +39,7 @@ const menuItems: MenuItem[] = [
   {
     id: 4,
     name: 'Хинкали с бараниной и брынзой',
-    description: '3 шт',
+    description: '',
     price: 300,
     category: 'mains',
     image: 'default'
@@ -47,7 +47,7 @@ const menuItems: MenuItem[] = [
   {
     id: 5,
     name: 'Хинкали с грибами',
-    description: '3 шт',
+    description: '',
     price: 300,
     category: 'mains',
     image: 'default'
@@ -55,7 +55,7 @@ const menuItems: MenuItem[] = [
   {
     id: 6,
     name: 'Хинкали с сыром',
-    description: '3 шт',
+    description: '',
     price: 300,
     category: 'mains',
     image: 'default'
@@ -64,7 +64,7 @@ const menuItems: MenuItem[] = [
   {
     id: 7,
     name: 'Бакинские томаты с имеретинским сыром и соусом песто',
-    description: '210 г',
+    description: '',
     price: 325,
     category: 'appetizers',
     image: 'default'
@@ -72,7 +72,7 @@ const menuItems: MenuItem[] = [
   {
     id: 8,
     name: 'Сельдь с теплым картофелем и луком',
-    description: '250 г',
+    description: '',
     price: 295,
     category: 'appetizers',
     image: 'default'
@@ -80,7 +80,7 @@ const menuItems: MenuItem[] = [
   {
     id: 9,
     name: 'Ассорти из грузинского домашнего сыра',
-    description: '200 г',
+    description: '',
     price: 685,
     category: 'appetizers',
     image: 'default'
@@ -88,7 +88,7 @@ const menuItems: MenuItem[] = [
   {
     id: 10,
     name: 'Грузинские соленья',
-    description: '250 г',
+    description: '',
     price: 410,
     category: 'appetizers',
     image: 'default'
@@ -96,7 +96,7 @@ const menuItems: MenuItem[] = [
   {
     id: 11,
     name: 'Ассорти из свежих овощей',
-    description: '200 г',
+    description: '',
     price: 375,
     category: 'appetizers',
     image: 'default'
@@ -104,7 +104,7 @@ const menuItems: MenuItem[] = [
   {
     id: 12,
     name: 'Тарелка к пиву',
-    description: '330 г',
+    description: '',
     price: 525,
     category: 'appetizers',
     image: 'default'
@@ -112,7 +112,7 @@ const menuItems: MenuItem[] = [
   {
     id: 13,
     name: 'Мясное плато',
-    description: '300 г',
+    description: '',
     price: 855,
     category: 'appetizers',
     image: 'default'
@@ -120,7 +120,7 @@ const menuItems: MenuItem[] = [
   {
     id: 14,
     name: 'Ростбиф',
-    description: '100 г',
+    description: '',
     price: 635,
     category: 'appetizers',
     image: 'default'
@@ -128,7 +128,7 @@ const menuItems: MenuItem[] = [
   {
     id: 15,
     name: 'Хрустящие баклажаны с соусом Тай Чили',
-    description: '300 г',
+    description: '',
     price: 465,
     category: 'appetizers',
     image: 'default'
@@ -136,7 +136,7 @@ const menuItems: MenuItem[] = [
   {
     id: 16,
     name: 'Ассорти пхали',
-    description: '270 г',
+    description: '',
     price: 610,
     category: 'appetizers',
     image: 'default'
@@ -144,7 +144,7 @@ const menuItems: MenuItem[] = [
   {
     id: 17,
     name: 'Рулетики из баклажанов с начинкой из грецких орехов',
-    description: '270 г',
+    description: '',
     price: 435,
     category: 'appetizers',
     image: 'default'
@@ -152,7 +152,7 @@ const menuItems: MenuItem[] = [
   {
     id: 18,
     name: 'Шампиньоны запечённые с сыром',
-    description: '200 г',
+    description: '',
     price: 425,
     category: 'appetizers',
     image: 'default'
@@ -160,7 +160,7 @@ const menuItems: MenuItem[] = [
   {
     id: 19,
     name: 'Сырные палочки в хрустящей панировке',
-    description: '180 г',
+    description: '',
     price: 335,
     category: 'appetizers',
     image: 'default'
@@ -168,7 +168,7 @@ const menuItems: MenuItem[] = [
   {
     id: 20,
     name: 'Салат из бакинских томатов и огурцов',
-    description: '280 г',
+    description: '',
     price: 415,
     category: 'appetizers',
     image: 'default'
@@ -176,7 +176,7 @@ const menuItems: MenuItem[] = [
   {
     id: 21,
     name: 'Цезарь с курицей',
-    description: '210 г',
+    description: '',
     price: 435,
     category: 'appetizers',
     image: 'default'
@@ -184,7 +184,7 @@ const menuItems: MenuItem[] = [
   {
     id: 22,
     name: 'Цезарь с креветками',
-    description: '200 г',
+    description: '',
     price: 545,
     category: 'appetizers',
     image: 'default'
@@ -192,7 +192,7 @@ const menuItems: MenuItem[] = [
   {
     id: 23,
     name: 'Фирменный Салат Ван Гоги',
-    description: '230 г',
+    description: '',
     price: 585,
     category: 'appetizers',
     image: 'default'
@@ -200,7 +200,7 @@ const menuItems: MenuItem[] = [
   {
     id: 24,
     name: 'Теплый салат с языком',
-    description: '200 г',
+    description: '',
     price: 525,
     category: 'appetizers',
     image: 'default'
@@ -208,7 +208,7 @@ const menuItems: MenuItem[] = [
   {
     id: 25,
     name: 'Салат Тбилиси от Шеф-повара',
-    description: '200 г',
+    description: '',
     price: 495,
     category: 'appetizers',
     image: 'default'
@@ -216,7 +216,7 @@ const menuItems: MenuItem[] = [
   {
     id: 26,
     name: 'Салат из хрустящих баклажанов с сыром Страчателла',
-    description: '220 г',
+    description: '',
     price: 665,
     category: 'appetizers',
     image: 'default'
@@ -224,7 +224,7 @@ const menuItems: MenuItem[] = [
   {
     id: 27,
     name: 'Салат из булгура со свежими овощами',
-    description: '200 г',
+    description: '',
     price: 385,
     category: 'appetizers',
     image: 'default'
@@ -232,7 +232,7 @@ const menuItems: MenuItem[] = [
   {
     id: 28,
     name: 'Салат Тевзи',
-    description: '200 г',
+    description: '',
     price: 595,
     category: 'appetizers',
     image: 'default'
@@ -240,7 +240,7 @@ const menuItems: MenuItem[] = [
   {
     id: 29,
     name: 'Салат Мамали',
-    description: '200 г',
+    description: '',
     price: 410,
     category: 'appetizers',
     image: 'default'
@@ -248,7 +248,7 @@ const menuItems: MenuItem[] = [
   {
     id: 30,
     name: 'Салат из ростбифа',
-    description: '210 г',
+    description: '',
     price: 770,
     category: 'appetizers',
     image: 'default'
@@ -256,7 +256,7 @@ const menuItems: MenuItem[] = [
   {
     id: 31,
     name: 'Харчо',
-    description: '300 г',
+    description: '',
     price: 400,
     category: 'appetizers',
     image: 'default'
@@ -264,7 +264,7 @@ const menuItems: MenuItem[] = [
   {
     id: 32,
     name: 'Кюфта по-Турецки с нутом',
-    description: '400 г',
+    description: '',
     price: 425,
     category: 'appetizers',
     image: 'default'
@@ -272,7 +272,7 @@ const menuItems: MenuItem[] = [
   {
     id: 33,
     name: 'Борщ с салом и чесночком',
-    description: '300/200 г',
+    description: '',
     price: 395,
     category: 'appetizers',
     image: 'default'
@@ -280,7 +280,7 @@ const menuItems: MenuItem[] = [
   {
     id: 34,
     name: 'Суп Дюшбара - Говырма',
-    description: '300 г',
+    description: '',
     price: 415,
     category: 'appetizers',
     image: 'default'
@@ -288,7 +288,7 @@ const menuItems: MenuItem[] = [
   {
     id: 35,
     name: 'Суп тыквенный',
-    description: '350 г',
+    description: '',
     price: 355,
     category: 'appetizers',
     image: 'default'
@@ -296,7 +296,7 @@ const menuItems: MenuItem[] = [
   {
     id: 36,
     name: 'Куриный суп с домашней лапшой',
-    description: '350 г',
+    description: '',
     price: 325,
     category: 'appetizers',
     image: 'default'
@@ -305,7 +305,7 @@ const menuItems: MenuItem[] = [
   {
     id: 63,
     name: 'Ткемали',
-    description: '50 г',
+    description: '',
     price: 80,
     category: 'appetizers',
     image: 'default'
@@ -313,7 +313,7 @@ const menuItems: MenuItem[] = [
   {
     id: 64,
     name: 'Аджика',
-    description: '50 г',
+    description: '',
     price: 80,
     category: 'appetizers',
     image: 'default'
@@ -321,7 +321,7 @@ const menuItems: MenuItem[] = [
   {
     id: 65,
     name: 'Томатный',
-    description: '50 г',
+    description: '',
     price: 80,
     category: 'appetizers',
     image: 'default'
@@ -329,7 +329,7 @@ const menuItems: MenuItem[] = [
   {
     id: 66,
     name: 'Сметана',
-    description: '50 г',
+    description: '',
     price: 80,
     category: 'appetizers',
     image: 'default'
@@ -338,7 +338,7 @@ const menuItems: MenuItem[] = [
   {
     id: 37,
     name: 'Буглама из ягненка',
-    description: '350 г',
+    description: '',
     price: 545,
     category: 'mains',
     image: 'default'
@@ -346,7 +346,7 @@ const menuItems: MenuItem[] = [
   {
     id: 38,
     name: 'Говурма из ягнёнка',
-    description: '350 г',
+    description: '',
     price: 495,
     category: 'mains',
     image: 'default'
@@ -354,7 +354,7 @@ const menuItems: MenuItem[] = [
   {
     id: 39,
     name: 'Долма',
-    description: '250 г',
+    description: '',
     price: 675,
     category: 'mains',
     image: 'default'
@@ -362,7 +362,7 @@ const menuItems: MenuItem[] = [
   {
     id: 40,
     name: 'Оджахури из свинины',
-    description: '350 г',
+    description: '',
     price: 445,
     category: 'mains',
     image: 'default'
@@ -370,7 +370,7 @@ const menuItems: MenuItem[] = [
   {
     id: 41,
     name: 'Оджахури из телятины',
-    description: '350 г',
+    description: '',
     price: 560,
     category: 'mains',
     image: 'default'
@@ -378,7 +378,7 @@ const menuItems: MenuItem[] = [
   {
     id: 42,
     name: 'Цыпленок тапака с мятым картофелем',
-    description: '450 г',
+    description: '',
     price: 635,
     category: 'mains',
     image: 'default'
@@ -386,7 +386,7 @@ const menuItems: MenuItem[] = [
   {
     id: 43,
     name: 'Чкмерули',
-    description: '300 г',
+    description: '',
     price: 595,
     category: 'mains',
     image: 'default'
@@ -394,7 +394,7 @@ const menuItems: MenuItem[] = [
   {
     id: 44,
     name: 'Стейк из мраморной говядины с картофелем по-деревенски',
-    description: '350 г',
+    description: '',
     price: 890,
     category: 'mains',
     image: 'default'
@@ -402,7 +402,7 @@ const menuItems: MenuItem[] = [
   {
     id: 45,
     name: 'Стейк из свиной шеи с капустой по-гурийски',
-    description: '350 г',
+    description: '',
     price: 790,
     category: 'mains',
     image: 'default'
@@ -410,7 +410,7 @@ const menuItems: MenuItem[] = [
   {
     id: 46,
     name: 'Филе судака на овощной подушке',
-    description: '300 г',
+    description: '',
     price: 725,
     category: 'mains',
     image: 'default'
@@ -418,7 +418,7 @@ const menuItems: MenuItem[] = [
   {
     id: 47,
     name: 'Терпуг Камчатский запечённый',
-    description: '400 г',
+    description: '',
     price: 690,
     category: 'mains',
     image: 'default'
@@ -426,7 +426,7 @@ const menuItems: MenuItem[] = [
   {
     id: 48,
     name: 'Треска во фритюре с кисло-сладким соусом и картошкой фри',
-    description: '250 г',
+    description: '',
     price: 690,
     category: 'mains',
     image: 'default'
@@ -434,7 +434,7 @@ const menuItems: MenuItem[] = [
   {
     id: 49,
     name: 'Киресуз из телятины',
-    description: '350 г',
+    description: '',
     price: 590,
     category: 'mains',
     image: 'default'
@@ -442,7 +442,7 @@ const menuItems: MenuItem[] = [
   {
     id: 50,
     name: 'Овощи на пару',
-    description: '130 г',
+    description: '',
     price: 215,
     category: 'mains',
     image: 'default'
@@ -450,7 +450,7 @@ const menuItems: MenuItem[] = [
   {
     id: 51,
     name: 'Мятый картофель с чесноком',
-    description: '150 г',
+    description: '',
     price: 215,
     category: 'mains',
     image: 'default'
@@ -459,7 +459,7 @@ const menuItems: MenuItem[] = [
   {
     id: 52,
     name: 'Грузинский Шоти',
-    description: '1 шт',
+    description: '',
     price: 70,
     category: 'desserts',
     image: 'default'
@@ -467,7 +467,7 @@ const menuItems: MenuItem[] = [
   {
     id: 53,
     name: 'Хачапури по - Аджарски',
-    description: '320 г',
+    description: '',
     price: 385,
     category: 'desserts',
     image: 'default'
@@ -475,7 +475,7 @@ const menuItems: MenuItem[] = [
   {
     id: 54,
     name: 'Хачапури по - Мегрельски',
-    description: '270 г',
+    description: '',
     price: 415,
     category: 'desserts',
     image: 'default'
@@ -483,7 +483,7 @@ const menuItems: MenuItem[] = [
   {
     id: 55,
     name: 'Хачапури по - Мегрельски на компанию',
-    description: '500 г',
+    description: '',
     price: 695,
     category: 'desserts',
     image: 'default'
@@ -491,7 +491,7 @@ const menuItems: MenuItem[] = [
   {
     id: 56,
     name: 'Кубдари',
-    description: '250 г',
+    description: '',
     price: 355,
     category: 'desserts',
     image: 'default'
@@ -499,7 +499,7 @@ const menuItems: MenuItem[] = [
   {
     id: 57,
     name: 'Кубдари на компанию',
-    description: '500 г',
+    description: '',
     price: 625,
     category: 'desserts',
     image: 'default'
@@ -507,7 +507,7 @@ const menuItems: MenuItem[] = [
   {
     id: 58,
     name: 'Хачапури по-Турецки',
-    description: '330 г',
+    description: '',
     price: 425,
     category: 'desserts',
     image: 'default'
@@ -515,7 +515,7 @@ const menuItems: MenuItem[] = [
   {
     id: 59,
     name: 'Гюзлама с курицей и сыром',
-    description: '250 г',
+    description: '',
     price: 350,
     category: 'desserts',
     image: 'default'
@@ -523,7 +523,7 @@ const menuItems: MenuItem[] = [
   {
     id: 60,
     name: 'Гюзлама с курицей и сыром на компанию',
-    description: '500 г',
+    description: '',
     price: 685,
     category: 'desserts',
     image: 'default'
@@ -531,7 +531,7 @@ const menuItems: MenuItem[] = [
   {
     id: 61,
     name: 'Чебурек',
-    description: '180 г',
+    description: '',
     price: 275,
     category: 'desserts',
     image: 'default'
@@ -539,7 +539,7 @@ const menuItems: MenuItem[] = [
   {
     id: 62,
     name: 'Кутабы',
-    description: '130 г',
+    description: '',
     price: 255,
     category: 'desserts',
     image: 'default'
@@ -594,7 +594,7 @@ export default function App() {
 
       {activeTab === 'recommendations' && <Recommendations menuItems={menuItems} onItemClick={setSelectedItem} />}
       
-      {activeTab === 'ai' && <AIWaiter />}
+      {activeTab === 'ai' && <AIWaiter menuItems={menuItems} onItemClick={setSelectedItem} />}
 
       <BottomNav activeTab={activeTab} onTabChange={setActiveTab} />
       
@@ -602,8 +602,10 @@ export default function App() {
         {selectedItem && (
           <MenuDetailModal 
             key={selectedItem.id}
-            item={selectedItem} 
-            onClose={() => setSelectedItem(null)} 
+            item={selectedItem}
+            menuItems={menuItems}
+            onClose={() => setSelectedItem(null)}
+            onItemClick={setSelectedItem}
           />
         )}
       </AnimatePresence>

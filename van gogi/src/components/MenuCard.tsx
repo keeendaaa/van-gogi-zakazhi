@@ -70,9 +70,11 @@ export function MenuCard({ item, imageUrl, onClick }: MenuCardProps) {
       <div className="p-4">
         <h3 className="text-[#C41E3A] mb-1.5">{item.name}</h3>
         
-        <p className="text-gray-600 text-sm line-clamp-2">
-          {item.description}
-        </p>
+        {item.description && (
+          <p className="text-gray-600 text-sm line-clamp-2">
+            {item.description}
+          </p>
+        )}
       </div>
 
       {/* Decorative corner accent */}

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useMemo } from 'react';
 import { motion } from 'motion/react';
 import { MenuItem } from './types';
 import { ImageWithFallback } from './figma/ImageWithFallback';
@@ -7,10 +7,12 @@ import { getImageUrl } from './imageMap';
 
 interface MenuDetailModalProps {
   item: MenuItem;
+  menuItems: MenuItem[];
   onClose: () => void;
+  onItemClick: (item: MenuItem) => void;
 }
 
-export function MenuDetailModal({ item, onClose }: MenuDetailModalProps) {
+export function MenuDetailModal({ item, menuItems, onClose, onItemClick }: MenuDetailModalProps) {
   useEffect(() => {
     // Prevent body scroll when modal is open
     document.body.style.overflow = 'hidden';
@@ -18,6 +20,17 @@ export function MenuDetailModal({ item, onClose }: MenuDetailModalProps) {
       document.body.style.overflow = 'unset';
     };
   }, []);
+
+  // Находим похожие блюда из той же категории
+  const similarItems = useMemo(() => {
+    const sameCategory = menuItems.filter(
+      menuItem => menuItem.category === item.category && menuItem.id !== item.id
+    );
+    
+    // Перемешиваем и берем первые 4
+    const shuffled = [...sameCategory].sort(() => Math.random() - 0.5);
+    return shuffled.slice(0, 4);
+  }, [item, menuItems]);
 
   return (
     <div className="fixed inset-0 z-50 flex items-end justify-center">
@@ -79,25 +92,56 @@ export function MenuDetailModal({ item, onClose }: MenuDetailModalProps) {
               </div>
             </div>
 
-            <p className="text-gray-600 mb-5 text-sm">
-              {item.description}
-            </p>
+            {item.description && (
+              <p className="text-gray-600 mb-5 text-sm">
+                {item.description}
+              </p>
+            )}
 
-            {/* Additional details */}
-            <div className="border-t border-[#C41E3A]/10 pt-5 space-y-3">
-              <div className="flex items-center gap-3">
-                <div className="w-1.5 h-1.5 bg-[#C41E3A] rounded-full"></div>
-                <span className="text-gray-700 text-sm">Время приготовления: 15-20 минут</span>
+            {/* Похожие блюда */}
+            {similarItems.length > 0 && (
+              <div className="mt-6 pt-5 border-t border-[#C41E3A]/10">
+                <h3 className="text-[#C41E3A] font-semibold mb-4 text-lg">Похожие блюда</h3>
+                <div className="grid grid-cols-2 gap-3">
+                  {similarItems.map((similarItem) => (
+                    <motion.div
+                      key={similarItem.id}
+                      className="bg-white rounded-lg overflow-hidden shadow-sm border border-[#C41E3A]/10 cursor-pointer active:shadow-md transition-shadow"
+                      onClick={() => {
+                        onItemClick(similarItem);
+                      }}
+                      whileTap={{ scale: 0.97 }}
+                    >
+                      <div className="relative h-24 overflow-hidden bg-gradient-to-br from-[#C41E3A]/5 to-[#FFF8F0]">
+                        {getImageUrl(similarItem.name) ? (
+                          <ImageWithFallback
+                            src={getImageUrl(similarItem.name)}
+                            alt={similarItem.name}
+                            className="w-full h-full object-cover"
+                          />
+                        ) : (
+                          <div className="w-full h-full flex items-center justify-center">
+                            <div className="w-8 h-8 rounded-full bg-[#C41E3A]/10 flex items-center justify-center">
+                              <svg className="w-4 h-4 text-[#C41E3A]/30" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                              </svg>
+                            </div>
+                          </div>
+                        )}
+                      </div>
+                      <div className="p-2">
+                        <h4 className="text-[#C41E3A] text-xs font-medium line-clamp-2 mb-1">
+                          {similarItem.name}
+                        </h4>
+                        <p className="text-[#C41E3A] text-xs font-semibold">
+                          {similarItem.price} ₽
+                        </p>
+                      </div>
+                    </motion.div>
+                  ))}
+                </div>
               </div>
-              <div className="flex items-center gap-3">
-                <div className="w-1.5 h-1.5 bg-[#C41E3A] rounded-full"></div>
-                <span className="text-gray-700 text-sm">Порция: 250г</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <div className="w-1.5 h-1.5 bg-[#C41E3A] rounded-full"></div>
-                <span className="text-gray-700 text-sm">Калорийность: {Math.floor(Math.random() * 400 + 200)} ккал</span>
-              </div>
-            </div>
+            )}
           </div>
         </motion.div>
       </div>
