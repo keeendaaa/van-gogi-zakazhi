@@ -118,14 +118,6 @@ const menuItems: MenuItem[] = [
     image: 'default'
   },
   {
-    id: 14,
-    name: 'Ростбиф',
-    description: '',
-    price: 635,
-    category: 'appetizers',
-    image: 'default'
-  },
-  {
     id: 15,
     name: 'Хрустящие баклажаны с соусом Тай Чили',
     description: '',
@@ -222,38 +214,6 @@ const menuItems: MenuItem[] = [
     image: 'default'
   },
   {
-    id: 27,
-    name: 'Салат из булгура со свежими овощами',
-    description: '',
-    price: 385,
-    category: 'appetizers',
-    image: 'default'
-  },
-  {
-    id: 28,
-    name: 'Салат Тевзи',
-    description: '',
-    price: 595,
-    category: 'appetizers',
-    image: 'default'
-  },
-  {
-    id: 29,
-    name: 'Салат Мамали',
-    description: '',
-    price: 410,
-    category: 'appetizers',
-    image: 'default'
-  },
-  {
-    id: 30,
-    name: 'Салат из ростбифа',
-    description: '',
-    price: 770,
-    category: 'appetizers',
-    image: 'default'
-  },
-  {
     id: 31,
     name: 'Харчо',
     description: '',
@@ -274,14 +234,6 @@ const menuItems: MenuItem[] = [
     name: 'Борщ с салом и чесночком',
     description: '',
     price: 395,
-    category: 'appetizers',
-    image: 'default'
-  },
-  {
-    id: 34,
-    name: 'Суп Дюшбара - Говырма',
-    description: '',
-    price: 415,
     category: 'appetizers',
     image: 'default'
   },
@@ -339,7 +291,7 @@ const menuItems: MenuItem[] = [
     id: 37,
     name: 'Буглама из ягненка',
     description: '',
-    price: 545,
+    price: 795,
     category: 'mains',
     image: 'default'
   },
@@ -347,7 +299,7 @@ const menuItems: MenuItem[] = [
     id: 38,
     name: 'Говурма из ягнёнка',
     description: '',
-    price: 495,
+    price: 785,
     category: 'mains',
     image: 'default'
   },
@@ -363,7 +315,7 @@ const menuItems: MenuItem[] = [
     id: 40,
     name: 'Оджахури из свинины',
     description: '',
-    price: 445,
+    price: 585,
     category: 'mains',
     image: 'default'
   },
@@ -371,15 +323,15 @@ const menuItems: MenuItem[] = [
     id: 41,
     name: 'Оджахури из телятины',
     description: '',
-    price: 560,
+    price: 645,
     category: 'mains',
     image: 'default'
   },
   {
     id: 42,
-    name: 'Цыпленок тапака с мятым картофелем',
+    name: 'Цыпленок тапака с толченным картофелем',
     description: '',
-    price: 635,
+    price: 915,
     category: 'mains',
     image: 'default'
   },
@@ -395,63 +347,31 @@ const menuItems: MenuItem[] = [
     id: 44,
     name: 'Стейк из мраморной говядины с картофелем по-деревенски',
     description: '',
-    price: 890,
+    price: 985,
     category: 'mains',
     image: 'default'
   },
   {
     id: 45,
-    name: 'Стейк из свиной шеи с капустой по-гурийски',
+    name: 'Филе судака на овощной подушке',
     description: '',
-    price: 790,
+    price: 795,
     category: 'mains',
     image: 'default'
   },
   {
     id: 46,
-    name: 'Филе судака на овощной подушке',
+    name: 'Терпуг Камчатский запечённый',
     description: '',
-    price: 725,
+    price: 795,
     category: 'mains',
     image: 'default'
   },
   {
     id: 47,
-    name: 'Терпуг Камчатский запечённый',
-    description: '',
-    price: 690,
-    category: 'mains',
-    image: 'default'
-  },
-  {
-    id: 48,
     name: 'Треска во фритюре с кисло-сладким соусом и картошкой фри',
     description: '',
     price: 690,
-    category: 'mains',
-    image: 'default'
-  },
-  {
-    id: 49,
-    name: 'Киресуз из телятины',
-    description: '',
-    price: 590,
-    category: 'mains',
-    image: 'default'
-  },
-  {
-    id: 50,
-    name: 'Овощи на пару',
-    description: '',
-    price: 215,
-    category: 'mains',
-    image: 'default'
-  },
-  {
-    id: 51,
-    name: 'Мятый картофель с чесноком',
-    description: '',
-    price: 215,
     category: 'mains',
     image: 'default'
   },
@@ -514,7 +434,7 @@ const menuItems: MenuItem[] = [
   },
   {
     id: 59,
-    name: 'Гюзлама с курицей и сыром',
+    name: 'Гюзлама с курицей и сыром на одного',
     description: '',
     price: 350,
     category: 'desserts',

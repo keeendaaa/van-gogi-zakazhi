@@ -58,13 +58,5 @@
     server: {
       port: 3000,
       open: true,
-      proxy: {
-        '/api/webhook': {
-          target: 'https://n8n.zakazhi.online',
-          changeOrigin: true,
-          rewrite: (path) => path.replace(/^\/api\/webhook/, '/webhook'),
-          secure: true,
-        },
-      },
     },
   });
