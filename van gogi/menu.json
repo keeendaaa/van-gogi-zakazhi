@@ -131,7 +131,7 @@
             "value": 435,
             "currency": "₽"
           },
-          "photos": [
+          "photos": [ 
             "/menu/Рулетики из баклажанов с начинкой из грецких орехов.png"
           ],
           "source_paragraph": 38
@@ -485,7 +485,7 @@
           "source_paragraph": 147
         },
         {
-          "name": "Цыпленок тапака с толченным картофелем",
+          "name": "Цыпленок тапака с мятым картофелем",
           "portion": "450 г",
           "price_text": "Цена: 915 ₽",
           "price": {
@@ -561,19 +561,6 @@
             "/menu/Треска во фритюре с кисло-сладким соусом и картошкой фри.png"
           ],
           "source_paragraph": 172
-        },
-        {
-          "name": "Долма",
-          "portion": "250 г",
-          "price_text": "Цена: 675 ₽",
-          "price": {
-            "value": 675,
-            "currency": "₽"
-          },
-          "photos": [
-            "/menu/Долма.png"
-          ],
-          "source_paragraph": 176
         }
       ]
     },
