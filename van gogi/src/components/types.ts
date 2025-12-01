@@ -3,7 +3,7 @@ export interface MenuItem {
   name: string;
   description: string;
   price: number;
-  category: 'appetizers' | 'mains' | 'desserts' | 'drinks';
+  category: 'appetizers' | 'salads' | 'mains' | 'soups' | 'bakery' | 'khinkali' | 'sides' | 'sauces' | 'desserts' | 'drinks';
   image: string;
 }
 

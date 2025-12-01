@@ -7,11 +7,16 @@ interface CategoryTabsProps {
   onSelectCategory: (category: string) => void;
 }
 
+// Категории, которые реально используются (есть блюда)
 const categories: Category[] = [
   { id: 'all', name: 'Все', icon: 'utensils' },
   { id: 'appetizers', name: 'Закуски', icon: 'utensils' },
-  { id: 'mains', name: 'Основные', icon: 'utensils' },
-  { id: 'desserts', name: 'Десерты', icon: 'cake' },
+  { id: 'salads', name: 'Салаты', icon: 'utensils' },
+  { id: 'mains', name: 'Горячие блюда', icon: 'utensils' },
+  { id: 'soups', name: 'Супы', icon: 'utensils' },
+  { id: 'khinkali', name: 'Хинкали', icon: 'utensils' },
+  { id: 'bakery', name: 'Выпечка', icon: 'cake' },
+  { id: 'sauces', name: 'Соусы', icon: 'utensils' },
 ];
 
 const iconMap = {

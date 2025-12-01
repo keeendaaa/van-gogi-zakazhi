@@ -1,0 +1,291 @@
+{
+  "Бакинские томаты с имеретинским сыром и соусом песто": {
+    "old_section": "ЗАКУСКИ",
+    "new_category": "НЕ НАЙДЕНО",
+    "category_id": "appetizers"
+  },
+  "Сельдь с теплым картофелем и луком": {
+    "old_section": "ЗАКУСКИ",
+    "new_category": "САЛАТЫ",
+    "category_id": "salads"
+  },
+  "Ассорти из грузинского домашнего сыра": {
+    "old_section": "ЗАКУСКИ",
+    "new_category": "ХОЛОДНЫЕ ЗАКУСКИ",
+    "category_id": "appetizers"
+  },
+  "Грузинские соленья": {
+    "old_section": "ЗАКУСКИ",
+    "new_category": "ХОЛОДНЫЕ ЗАКУСКИ",
+    "category_id": "appetizers"
+  },
+  "Ассорти из свежих овощей": {
+    "old_section": "ЗАКУСКИ",
+    "new_category": "ХОЛОДНЫЕ ЗАКУСКИ",
+    "category_id": "appetizers"
+  },
+  "Тарелка к пиву": {
+    "old_section": "ЗАКУСКИ",
+    "new_category": "ХОЛОДНЫЕ ЗАКУСКИ",
+    "category_id": "appetizers"
+  },
+  "Мясное плато": {
+    "old_section": "ЗАКУСКИ",
+    "new_category": "ХОЛОДНЫЕ ЗАКУСКИ",
+    "category_id": "appetizers"
+  },
+  "Хрустящие баклажаны с соусом Тай Чили": {
+    "old_section": "ЗАКУСКИ",
+    "new_category": "ХОЛОДНЫЕ ЗАКУСКИ",
+    "category_id": "appetizers"
+  },
+  "Ассорти пхали": {
+    "old_section": "ЗАКУСКИ",
+    "new_category": "ХОЛОДНЫЕ ЗАКУСКИ",
+    "category_id": "appetizers"
+  },
+  "Рулетики из баклажанов с начинкой из грецких орехов": {
+    "old_section": "ЗАКУСКИ",
+    "new_category": "ХОЛОДНЫЕ ЗАКУСКИ",
+    "category_id": "appetizers",
+    "matched_with": "Рулетики из баклажан"
+  },
+  "Шампиньоны запечённые с сыром": {
+    "old_section": "ЗАКУСКИ",
+    "new_category": "НЕ НАЙДЕНО",
+    "category_id": "appetizers"
+  },
+  "Сырные палочки в хрустящей панировке": {
+    "old_section": "ЗАКУСКИ",
+    "new_category": "ХОЛОДНЫЕ ЗАКУСКИ",
+    "category_id": "appetizers"
+  },
+  "Салат из бакинских томатов и огурцов": {
+    "old_section": "ЗАКУСКИ",
+    "new_category": "САЛАТЫ",
+    "category_id": "salads",
+    "matched_with": "Салат из бакинских томатов"
+  },
+  "Цезарь с курицей": {
+    "old_section": "ЗАКУСКИ",
+    "new_category": "САЛАТЫ",
+    "category_id": "salads"
+  },
+  "Цезарь с креветками": {
+    "old_section": "ЗАКУСКИ",
+    "new_category": "САЛАТЫ",
+    "category_id": "salads"
+  },
+  "Фирменный Салат Ван Гоги": {
+    "old_section": "ЗАКУСКИ",
+    "new_category": "САЛАТЫ",
+    "category_id": "salads"
+  },
+  "Теплый салат с языком": {
+    "old_section": "ЗАКУСКИ",
+    "new_category": "САЛАТЫ",
+    "category_id": "salads"
+  },
+  "Салат Тбилиси от Шеф-повара": {
+    "old_section": "ЗАКУСКИ",
+    "new_category": "САЛАТЫ",
+    "category_id": "salads"
+  },
+  "Салат из хрустящих баклажанов с сыром Страчателла": {
+    "old_section": "ЗАКУСКИ",
+    "new_category": "НЕ НАЙДЕНО",
+    "category_id": "appetizers"
+  },
+  "Харчо": {
+    "old_section": "ЗАКУСКИ",
+    "new_category": "СУПЫ",
+    "category_id": "soups"
+  },
+  "Кюфта по-Турецки с нутом": {
+    "old_section": "ЗАКУСКИ",
+    "new_category": "СУПЫ",
+    "category_id": "soups",
+    "matched_with": "Кюфта по - Турецки с нутом"
+  },
+  "Борщ с салом и чесночком": {
+    "old_section": "ЗАКУСКИ",
+    "new_category": "НЕ НАЙДЕНО",
+    "category_id": "appetizers"
+  },
+  "Суп тыквенный": {
+    "old_section": "ЗАКУСКИ",
+    "new_category": "СУПЫ",
+    "category_id": "soups"
+  },
+  "Куриный суп с домашней лапшой": {
+    "old_section": "ЗАКУСКИ",
+    "new_category": "СУПЫ",
+    "category_id": "soups"
+  },
+  "Хинкали с говядиной и свининой": {
+    "old_section": "Хинкали",
+    "new_category": "ХИНКАЛИ",
+    "category_id": "khinkali"
+  },
+  "Хинкали с телятиной": {
+    "old_section": "Хинкали",
+    "new_category": "ХИНКАЛИ",
+    "category_id": "khinkali"
+  },
+  "Хинкали с бараниной": {
+    "old_section": "Хинкали",
+    "new_category": "ХИНКАЛИ",
+    "category_id": "khinkali"
+  },
+  "Хинкали с бараниной и брынзой": {
+    "old_section": "Хинкали",
+    "new_category": "ХИНКАЛИ",
+    "category_id": "khinkali"
+  },
+  "Хинкали с грибами": {
+    "old_section": "Хинкали",
+    "new_category": "ХИНКАЛИ",
+    "category_id": "khinkali"
+  },
+  "Хинкали с сыром": {
+    "old_section": "Хинкали",
+    "new_category": "НЕ НАЙДЕНО",
+    "category_id": "khinkali"
+  },
+  "Буглама из ягненка": {
+    "old_section": "Горячие блюда",
+    "new_category": "ГОРЯЧИЕ БЛЮДА",
+    "category_id": "mains"
+  },
+  "Говурма из ягнёнка": {
+    "old_section": "Горячие блюда",
+    "new_category": "НЕ НАЙДЕНО",
+    "category_id": "mains"
+  },
+  "Долма": {
+    "old_section": "Горячие блюда",
+    "new_category": "ГОРЯЧИЕ БЛЮДА",
+    "category_id": "mains"
+  },
+  "Оджахури из свинины": {
+    "old_section": "Горячие блюда",
+    "new_category": "ГОРЯЧИЕ БЛЮДА",
+    "category_id": "mains"
+  },
+  "Оджахури из телятины": {
+    "old_section": "Горячие блюда",
+    "new_category": "ГОРЯЧИЕ БЛЮДА",
+    "category_id": "mains"
+  },
+  "Цыпленок тапака с толченным картофелем": {
+    "old_section": "Горячие блюда",
+    "new_category": "НЕ НАЙДЕНО",
+    "category_id": "mains"
+  },
+  "Чкмерули": {
+    "old_section": "Горячие блюда",
+    "new_category": "ГОРЯЧИЕ БЛЮДА",
+    "category_id": "mains",
+    "matched_with": "Чкмерули с картофелем по деревенски"
+  },
+  "Стейк из мраморной говядины с картофелем по-деревенски": {
+    "old_section": "Горячие блюда",
+    "new_category": "ГОРЯЧИЕ БЛЮДА",
+    "category_id": "mains",
+    "matched_with": "Стейк из мраморной говядины"
+  },
+  "Филе судака на овощной подушке": {
+    "old_section": "Горячие блюда",
+    "new_category": "ГОРЯЧИЕ БЛЮДА",
+    "category_id": "mains"
+  },
+  "Терпуг Камчатский запечённый": {
+    "old_section": "Горячие блюда",
+    "new_category": "ГОРЯЧИЕ БЛЮДА",
+    "category_id": "mains"
+  },
+  "Треска во фритюре с кисло-сладким соусом и картошкой фри": {
+    "old_section": "Горячие блюда",
+    "new_category": "ГОРЯЧИЕ БЛЮДА",
+    "category_id": "mains"
+  },
+  "Грузинский Шоти": {
+    "old_section": "ДЕСЕРТЫ",
+    "new_category": "ВЫПЕЧКА",
+    "category_id": "bakery"
+  },
+  "Хачапури по - Аджарски": {
+    "old_section": "ДЕСЕРТЫ",
+    "new_category": "НЕ НАЙДЕНО",
+    "category_id": "bakery"
+  },
+  "Хачапури по - Мегрельски": {
+    "old_section": "ДЕСЕРТЫ",
+    "new_category": "НЕ НАЙДЕНО",
+    "category_id": "bakery"
+  },
+  "Хачапури по - Мегрельски на компанию": {
+    "old_section": "ДЕСЕРТЫ",
+    "new_category": "НЕ НАЙДЕНО",
+    "category_id": "bakery"
+  },
+  "Кубдари": {
+    "old_section": "ДЕСЕРТЫ",
+    "new_category": "НЕ НАЙДЕНО",
+    "category_id": "bakery"
+  },
+  "Кубдари на компанию": {
+    "old_section": "ДЕСЕРТЫ",
+    "new_category": "НЕ НАЙДЕНО",
+    "category_id": "bakery"
+  },
+  "Хачапури по-Турецки": {
+    "old_section": "ДЕСЕРТЫ",
+    "new_category": "НЕ НАЙДЕНО",
+    "category_id": "bakery"
+  },
+  "Гюзлама с курицей и сыром на одного": {
+    "old_section": "ДЕСЕРТЫ",
+    "new_category": "ВЫПЕЧКА",
+    "category_id": "bakery",
+    "matched_with": "Гюзлама с курицей и сыром"
+  },
+  "Гюзлама с курицей и сыром на компанию": {
+    "old_section": "ДЕСЕРТЫ",
+    "new_category": "ВЫПЕЧКА",
+    "category_id": "bakery",
+    "matched_with": "Гюзлама с курицей и сыром"
+  },
+  "Чебурек": {
+    "old_section": "ДЕСЕРТЫ",
+    "new_category": "ВЫПЕЧКА",
+    "category_id": "bakery",
+    "matched_with": "Чебурек на одного"
+  },
+  "Кутабы": {
+    "old_section": "ДЕСЕРТЫ",
+    "new_category": "ВЫПЕЧКА",
+    "category_id": "bakery",
+    "matched_with": "Кутабы на одного"
+  },
+  "Ткемали": {
+    "old_section": "Соусы",
+    "new_category": "СОУСЫ",
+    "category_id": "sauces"
+  },
+  "Аджика": {
+    "old_section": "Соусы",
+    "new_category": "СОУСЫ",
+    "category_id": "sauces"
+  },
+  "Томатный": {
+    "old_section": "Соусы",
+    "new_category": "СОУСЫ",
+    "category_id": "sauces"
+  },
+  "Сметана": {
+    "old_section": "Соусы",
+    "new_category": "СОУСЫ",
+    "category_id": "sauces"
+  }
+}
